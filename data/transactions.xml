@@ -1,0 +1,267 @@
+<reply>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To your share 3  Conf #:34375500888-1</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>57850</balance>
+		<amount>-5</amount>
+		<id>1495478</id>
+		<Source>HomeBank</Source>
+		<principal>-5</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To your share 3  Conf #:34162869391-2</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>57855</balance>
+		<amount>-10</amount>
+		<id>1495474</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To your share 2  Conf #:34162869391-1</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>57865</balance>
+		<amount>-10</amount>
+		<id>1495472</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To your share 9  Conf #:34122698990-2</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>57875</balance>
+		<amount>-10</amount>
+		<id>1495466</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To your share 9  Conf #:34122698990-1</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>57885</balance>
+		<amount>-10</amount>
+		<id>1495464</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To your loan 15  Conf #:33884430675-2</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>57895</balance>
+		<amount>-1000</amount>
+		<id>1495462</id>
+		<Source>HomeBank</Source>
+		<principal>-1000</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To your loan 15  Conf #:33884430675-1</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>58895</balance>
+		<amount>-1000</amount>
+		<id>1495460</id>
+		<Source>HomeBank</Source>
+		<principal>-1000</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Withdrawal Check</name>
+		<descr>5.00 Conf #:33643300719-1</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>59895</balance>
+		<amount>-5</amount>
+		<id>1495446</id>
+		<Source>HomeBank</Source>
+		<principal>-5</principal>
+		<OFXType>DEBIT</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Withdrawal Check</name>
+		<descr>18.80 Conf #:33643300717-1</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>59900</balance>
+		<amount>-18.8</amount>
+		<id>1495433</id>
+		<Source>HomeBank</Source>
+		<principal>-18.8</principal>
+		<OFXType>DEBIT</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Withdrawal Check</name>
+		<descr>200.00 Conf #:33643300716-1</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>59918.8</balance>
+		<amount>-200</amount>
+		<id>1495431</id>
+		<Source>HomeBank</Source>
+		<principal>-200</principal>
+		<OFXType>DEBIT</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To Colon Jeffrey I&apos;M GIVING THAT GUY SOME CASH. Conf #:33543269464-1</descr>
+		<postdate>03/06/2009</postdate>
+		<effdate>03/06/2009</effdate>
+		<balance>60118.8</balance>
+		<amount>-10</amount>
+		<id>1495425</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To Colon Jeffrey  Conf #:33515629601-3</descr>
+		<postdate>01/01/2009</postdate>
+		<effdate>01/01/2009</effdate>
+		<balance>60128.8</balance>
+		<amount>-10</amount>
+		<id>1495411</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To Colon Jeffrey  Conf #:33515629601-2</descr>
+		<postdate>01/01/2009</postdate>
+		<effdate>01/01/2009</effdate>
+		<balance>60138.8</balance>
+		<amount>-10</amount>
+		<id>1495409</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Transfer</name>
+		<descr>To Colon Jeffrey  Conf #:33515629601-1</descr>
+		<postdate>01/01/2009</postdate>
+		<effdate>01/01/2009</effdate>
+		<balance>60148.8</balance>
+		<amount>-10</amount>
+		<id>1495407</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>XFER</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Withdrawal Check</name>
+		<descr>10.00 Conf #:33464939553-1</descr>
+		<postdate>01/01/2009</postdate>
+		<effdate>01/01/2009</effdate>
+		<balance>60158.8</balance>
+		<amount>-10</amount>
+		<id>1495379</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>DEBIT</OFXType>
+	</item>
+	<item>
+		<name>Deposit</name>
+		<descr/>
+		<postdate>01/01/2009</postdate>
+		<effdate>01/01/2009</effdate>
+		<balance>60168.8</balance>
+		<amount>5</amount>
+		<id>1495378</id>
+		<Source>Teller</Source>
+		<principal>5</principal>
+		<OFXType>DEP</OFXType>
+	</item>
+	<item>
+		<name>Deposit</name>
+		<descr/>
+		<postdate>01/01/2009</postdate>
+		<effdate>01/01/2009</effdate>
+		<balance>60163.8</balance>
+		<amount>75</amount>
+		<id>1495372</id>
+		<Source>Teller</Source>
+		<principal>75</principal>
+		<OFXType>DEP</OFXType>
+	</item>
+	<item>
+		<name>Deposit</name>
+		<descr/>
+		<postdate>01/01/2009</postdate>
+		<effdate>01/01/2009</effdate>
+		<balance>60088.8</balance>
+		<amount>12.45</amount>
+		<id>1495349</id>
+		<Source>Teller</Source>
+		<principal>12.45</principal>
+		<OFXType>DEP</OFXType>
+	</item>
+	<item>
+		<name>Escrow Deposit</name>
+		<descr/>
+		<postdate>01/01/2009</postdate>
+		<effdate>01/01/2009</effdate>
+		<balance>60076.35</balance>
+		<amount>200</amount>
+		<id>1495338</id>
+		<Source>Teller</Source>
+		<principal>200</principal>
+		<OFXType>DEP</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Withdrawal Check</name>
+		<descr>100.00 Conf #:33013882668-1</descr>
+		<postdate>01/01/2009</postdate>
+		<effdate>01/01/2009</effdate>
+		<balance>59851.35</balance>
+		<amount>-100</amount>
+		<id>1495208</id>
+		<Source>HomeBank</Source>
+		<principal>-100</principal>
+		<OFXType>DEBIT</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Withdrawal Check</name>
+		<descr>10.00 Conf #:32773395675-1</descr>
+		<postdate>12/15/2008</postdate>
+		<effdate>12/15/2008</effdate>
+		<balance>59976.35</balance>
+		<amount>-10</amount>
+		<id>1494274</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>DEBIT</OFXType>
+	</item>
+	<item>
+		<name>E-Branch Withdrawal Check</name>
+		<descr>10.00 Conf #:32773395673-1</descr>
+		<postdate>12/15/2008</postdate>
+		<effdate>12/15/2008</effdate>
+		<balance>59986.35</balance>
+		<amount>-10</amount>
+		<id>1494272</id>
+		<Source>HomeBank</Source>
+		<principal>-10</principal>
+		<OFXType>DEBIT</OFXType>
+	</item>
+	<count>22</count>
+</reply>
