@@ -1,0 +1,116 @@
+<Response>
+	<function>Application.GetLoanTypes</function>
+	<Error/>
+	<File>
+		<LoanAppl>
+			<Source>Web</Source>
+			<Loan>
+				<LoanTypeID>22</LoanTypeID>
+				<Product>Balloon RE Loan</Product>
+				<Description>Only your signature is needed for line of credit.</Description>
+				<APY>Rates 4.5-14.6%</APY>
+				<LoanClass>OPENEND</LoanClass>
+				<MaxAge/>
+				<DefaultFreq>Monthly</DefaultFreq>
+				<Rating>
+					<Description>Excellent Credit</Description>
+					<Code>680</Code>
+				</Rating>
+				<Rating>
+					<Description>Average Credit</Description>
+					<Code>654</Code>
+				</Rating>
+				<Rating>
+					<Description>Poor Credit</Description>
+					<Code>600</Code>
+				</Rating>
+			</Loan>
+			<Loan>
+				<LoanTypeID>19</LoanTypeID>
+				<Product>HEA-NOO</Product>
+				<Description>Only your signature is required. Financing up to 60 months.</Description>
+				<APY>Rates 4.5-14.6%</APY>
+				<LoanClass>INSTALLMENT</LoanClass>
+				<MaxAge/>
+				<DefaultFreq>Monthly</DefaultFreq>
+				<Rating>
+					<Description>Excellent Credit</Description>
+					<Code>680</Code>
+				</Rating>
+				<Rating>
+					<Description>Average Credit</Description>
+					<Code>654</Code>
+				</Rating>
+				<Rating>
+					<Description>Poor Credit</Description>
+					<Code>600</Code>
+				</Rating>
+			</Loan>
+			<Loan>
+				<LoanTypeID>48</LoanTypeID>
+				<Product>Loans in Process of Liquidation</Product>
+				<Description>First and second mortgages available</Description>
+				<APY>Contact REGIONAL at 219-845-5654 for current rates</APY>
+				<LoanClass>INSTALLMENT</LoanClass>
+				<MaxAge/>
+				<DefaultFreq>Monthly</DefaultFreq>
+				<Rating>
+					<Description>Excellent Credit</Description>
+					<Code>680</Code>
+				</Rating>
+				<Rating>
+					<Description>Average Credit</Description>
+					<Code>654</Code>
+				</Rating>
+				<Rating>
+					<Description>Poor Credit</Description>
+					<Code>600</Code>
+				</Rating>
+			</Loan>
+			<Loan>
+				<LoanTypeID>2</LoanTypeID>
+				<Product>New Vehicle</Product>
+				<Description>Financing up to 72 months</Description>
+				<APY>Rates as low as 7.75%</APY>
+				<LoanClass>VEHICLE</LoanClass>
+				<MaxAge>12</MaxAge>
+				<DefaultFreq>Monthly</DefaultFreq>
+				<Rating>
+					<Description>Excellent Credit</Description>
+					<Code>680</Code>
+				</Rating>
+				<Rating>
+					<Description>Average Credit</Description>
+					<Code>654</Code>
+				</Rating>
+				<Rating>
+					<Description>Poor Credit</Description>
+					<Code>600</Code>
+				</Rating>
+				<MaxAmount>50000</MaxAmount>
+				<MaxTerm>60</MaxTerm>
+			</Loan>
+			<Loan>
+				<LoanTypeID>5</LoanTypeID>
+				<Product>Stock Secured</Product>
+				<Description>Financing up to 84 months.</Description>
+				<APY>Rates 5.6-11.5%</APY>
+				<LoanClass>VEHICLE</LoanClass>
+				<MaxAge>10</MaxAge>
+				<DefaultFreq>Monthly</DefaultFreq>
+				<Rating>
+					<Description>Excellent Credit</Description>
+					<Code>680</Code>
+				</Rating>
+				<Rating>
+					<Description>Average Credit</Description>
+					<Code>654</Code>
+				</Rating>
+				<Rating>
+					<Description>Poor Credit</Description>
+					<Code>600</Code>
+				</Rating>
+			</Loan>
+		</LoanAppl>
+	</File>
+</Response>

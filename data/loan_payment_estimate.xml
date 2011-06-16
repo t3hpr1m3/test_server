@@ -1,0 +1,1 @@
+<Response><function>GetPaymentEstimate</function><Error/><Payment>102.98</Payment><Rate>7</Rate><PaymentCount>60</PaymentCount><OriginationDate>3/6/2009</OriginationDate><FirstPaymentDate>4/5/2009</FirstPaymentDate><MaturityDate>3/5/2014</MaturityDate><PaymentDay>5</PaymentDay><RateError></RateError></Response>
