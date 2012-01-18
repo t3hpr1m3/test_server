@@ -17,11 +17,17 @@ class Connection
   end
 
   def handle_data
+    puts "handle_data"
     @buffer << s.gets()
-    unless [ 10, 13 ].index( @buffer[@buffer.length - 1] ).nil?
+    puts "@buffer: #{@buffer}"
+    puts "length: #{@buffer.length}"
+    puts "last_char: #{@buffer[@buffer.length - 1].to_i}"
+    unless ["\n", "\r"].index( @buffer[@buffer.length - 1] ).nil?
       @serv.logger.debug "#{s.to_i} R: #{@buffer}"
       parse_and_reply( @buffer )
       @buffer = ""
+    else
+      puts "not full message"
     end
   end
 
@@ -51,6 +57,10 @@ class Connection
       v.postingdate Time.now.strftime( "%m/%d/%Y" )
     end
     send_response( xml_text )
+  end
+
+  def handle_validate_admin(doc)
+    send_response('<reply />')
   end
 
   def handle_validate_member( doc )
@@ -235,7 +245,7 @@ class Connection
 
   def parse_and_reply(msg)
     doc = Nokogiri::XML(msg)
-    unless %w(validatemember ping adminlogin).include?(doc.root.name)
+    unless %w(validatemember ping adminlogin validateadmin PrepopApplicant).include?(doc.root.name)
       unless doc.root.name.downcase.eql?('request') && %w(getloantypes accountcheck).include?(doc.root.at_xpath('Function').text.downcase)
         if doc.root.at_xpath('context').nil?
           send_response('<reply><error><code>52</code></error></reply>')
@@ -253,6 +263,8 @@ class Connection
       handle_admin_login(doc)
     when "validatemember"
       handle_validate_member(doc)
+    when "validateadmin"
+      handle_validate_admin(doc)
     when "getmemberinfo"
       handle_get_member_info(doc)
     when 'keepalive'
@@ -291,6 +303,8 @@ class Connection
         handle_account_check(doc)
       when 'statementlist'
         send_file('estatements.xml')
+      else
+        send_response('<reply><error><code>999</code></error></reply>')
       end
     else
       send_response( '<reply><error><code>999</code></error></reply>' )

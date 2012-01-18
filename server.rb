@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 #
+$:.unshift File.dirname(__FILE__)
+puts "LOAD_PATH: #{$LOAD_PATH}"
 require 'socket'
 require 'thread'
 require 'rubygems'
