@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
-#
+
 $:.unshift File.dirname(__FILE__)
-puts "LOAD_PATH: #{$LOAD_PATH}"
 require 'socket'
 require 'thread'
 require 'rubygems'
@@ -132,7 +131,7 @@ class EftServer
 end
 
 trap( "INT" ) { $serv.shutdown }
-$serv = EftServer.new( 'localhost', 5025 )
+$serv = EftServer.new( 'localhost', 5030 )
 $serv.run
 
 puts "Shutting down"

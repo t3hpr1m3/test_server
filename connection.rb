@@ -7,6 +7,8 @@ class Connection
   STATE_CLOSED = 4
   VALID_ACCOUNT = 3
   VALID_PIN = "6089a01682dd3b70"
+  VALID_ADMIN_USERNAME = "share1"
+  VALID_ADMIN_PASSWORD = "6089a01682dd3b70"
   SESSION_TIMEOUT = 600
 
   def initialize( serv, sock )
@@ -60,7 +62,17 @@ class Connection
   end
 
   def handle_validate_admin(doc)
-    send_response('<reply />')
+    username = doc.root.at_xpath("adminuser").text
+    password = doc.root.at_xpath("adminpassword").text
+    xml_text = ""
+    x = Builder::XmlMarkup.new(:target => xml_text)
+    x.reply do |v|
+      if username.eql?(VALID_ADMIN_USERNAME) && password.eql?(VALID_ADMIN_PASSWORD)
+        send_response('<reply />')
+      else
+        send_response('<reply><error><code>45</code><info>Invalid username/password</info></error></reply>')
+      end
+    end
   end
 
   def handle_validate_member( doc )
@@ -100,14 +112,23 @@ class Connection
 
   def handle_account_check(doc)
     tax_id = doc.root.at_xpath('LoginTaxID').text.to_s
-    birth_date = doc.root.at_xpath('LoginBirthDate').text.to_s
-    account = doc.root.at_xpath('LoginAccount').text.to_s
+    birth_date = Date.strptime(doc.root.at_xpath('LoginBirthDate').text.to_s, '%m/%d/%Y')
+    account = ''
+    if doc.root.at_xpath('LoginAccount')
+      account = doc.root.at_xpath('LoginAccount').text.to_s
+    end
     member_doc = Nokogiri::XML(read_file('valid_member_info.xml'))
-    member_tax_id = member_doc.root.at_xpath('master/ssn').text.to_s
-    member_birth_date = member_doc.root.at_xpath('master/dob').text.to_s
+    member_tax_id = member_doc.root.at_xpath('master/ssn').text.to_s.gsub(/[^0-9]/, '')
+    member_birth_date = Date.strptime(member_doc.root.at_xpath('master/dob').text.to_s, '%m/%d/%Y')
     member_account = '3'
     code = 0
     demc = ''
+    puts "birth_date: #{birth_date}"
+    puts "member_birth_date: #{member_birth_date}"
+    puts "equal: #{birth_date.eql?(member_birth_date)}"
+    puts "tax_id: #{tax_id}"
+    puts "member_tax_id: #{member_tax_id}"
+    puts "equal: #{tax_id.eql?(member_tax_id)}"
     if account.eql?('')
       if birth_date.eql?(member_birth_date) && tax_id.eql?(member_tax_id)
         code = 101
@@ -153,6 +174,7 @@ class Connection
     limit = doc.root.at_xpath('maxTrans').text unless doc.root.at_xpath('maxTrans').nil?
     histitem = doc.root.at_xpath('histitem').text unless doc.root.at_xpath('histitem').nil?
 
+    puts "start_date: #{start_date}"
     start_date = Date.strptime( start_date, '%m/%d/%Y' ) unless start_date.nil?
     end_date = Date.strptime( end_date, '%m/%d/%Y' ) unless end_date.nil?
 
@@ -279,6 +301,8 @@ class Connection
       send_response('<pong/>')
     when 'xfer'
       send_response('<reply><confirmation>VALID CONFIRMATION</confirmation></reply>')
+    when 'pinChange'
+      send_response('<reply />')
     when 'Request'
       case doc.root.at_xpath('Function').text.downcase
       when 'getcurrentaddressandemail'
