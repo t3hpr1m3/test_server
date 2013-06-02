@@ -131,7 +131,7 @@ class EftServer
 end
 
 trap( "INT" ) { $serv.shutdown }
-$serv = EftServer.new( 'localhost', 5030 )
+$serv = EftServer.new( '127.0.0.1', 5030 )
 $serv.run
 
 puts "Shutting down"

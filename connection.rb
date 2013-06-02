@@ -327,6 +327,8 @@ class Connection
         handle_account_check(doc)
       when 'statementlist'
         send_file('estatements.xml')
+      when 'getoptinatmoverdraw'
+        send_response('<Response><Function>getOptInAtmOverdraw</Function></Response>')
       else
         send_response('<reply><error><code>999</code></error></reply>')
       end
