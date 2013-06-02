@@ -313,6 +313,8 @@ class Connection
         send_response('<Response><function>TransferAdd</function><ID>1556</ID></Response>')
       when 'alertgetpreferences'
         send_file('alert_preferences.xml')
+      when 'alertgettypes'
+        send_file('alert_types.xml')
       when 'getphonenumbers'
         send_file('phone_numbers.xml')
       when 'setcurrentemail'
